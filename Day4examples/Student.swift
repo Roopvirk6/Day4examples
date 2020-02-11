@@ -73,4 +73,14 @@ class Student: Person
     {
         return self.total / Double(self.marks.count)
     }
+    override func display()
+    {
+        for m in self.marks
+        {
+            print(m.key, ":", m.value)
+        }
+        print("total : \(self.total)")
+        print("per : \(self.per)")
+        print("result : \(self.result)")
+    }
 }
